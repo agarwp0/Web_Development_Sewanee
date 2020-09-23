@@ -1,0 +1,183 @@
+body{
+  margin:0;
+  font-family:Verdana,sans-serif;
+}
+
+/* Styling main box */
+#main{
+  display:flex;
+  flex-wrap: wrap;
+  width: 75%;
+  margin: 100px auto;
+  height:75%;
+}
+
+/* Styling the columns i.e. the subjects and programs columns */
+.columns{
+  width:40%;
+  margin-right: auto;
+  margin-left: auto;
+  font-size: 15px;
+}
+
+/* First and Second Column Rows with Text*/
+.first, .second{
+  text-decoration: none;
+  color: #5e366e;
+  font-weight: bolder;
+  font-size: 15px;
+  border: 1px solid #5e366e;
+  background-color: #fff;
+  display: flex;
+  padding: 10px 5px;
+  width:90%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.first:hover, .second:hover, .myIcon:hover{
+  background-color: #5e366e;
+  color: #fff;
+}
+
+.secondColumns{
+  display: none;
+}
+
+.firstColumnRow, .secondColumnRow{
+  display:flex;
+}
+
+/* Styling anchor outside menu image for Learn More */
+.learnMore{
+  /* display: flex;
+  padding: 22.5px 10px;
+  justify-content: center;
+  align-items: center; */
+  display: flex;
+  padding-left: 10px;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+}
+
+
+
+.learnMore:hover{
+  transform: scale(1.2);
+}
+
+/* Changing the color on click */
+.inAction{
+  background-color: #5e366e;
+  color: #fff;
+}
+
+
+/* Styling for the pop up iframe---------------------- */
+
+/* shadow background */
+.shadow {
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  /* padding-top: 100px; */
+  overflow: auto;
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Content */
+.popup-content {
+  position: relative;
+  margin: auto;
+  margin-top: 5.5%;
+  width: 80%;
+  height: 75%;
+  border-radius: 15px;
+  box-shadow: 5px 5px 15px 5px #4d4d4d;
+}
+
+/* The Close Button */
+.close {
+  position: absolute;
+  left: -20px;
+  top:-30px;
+  font-size: 250%;
+  font-weight: bolder;
+  color: #fff;
+}
+
+.close:hover{
+  cursor: pointer;
+  transform: scale(1.4);
+}
+
+/* --------------------------------------------------- */
+
+
+/* Styling for Device with width <= 600px ------------ */
+
+#menuIcon{
+  display: none;
+}
+
+/* Sticky Menu. Menu gets attached at the top after scrolling beyond it.  */
+.sticky {
+  position: fixed;
+  top: 0;
+}
+
+@media only screen and (max-width: 600px) {
+
+  body{
+    margin:0;
+    font-family:Verdana,sans-serif;
+    /* background-color: #5e366e;
+    color: #fff; */
+  }
+
+  #main{
+    display:flex;
+    flex-flow: column nowrap;
+    margin: auto;
+    margin-bottom: 30px;
+    width: 100%;
+    height:75%;
+  }
+
+  .columns{
+    width:100%;
+    font-size: 15px;
+    background-color: #fff;
+  }
+
+  .secondColumns{
+    margin-top: 30px;
+  }
+
+  .myIcon {
+    width: 100%;
+    z-index: 1;
+    background-color: #5e366e;
+  }
+
+  #menuIcon{
+    width: 30px;
+    margin-left:48%;
+    display:block;
+  }
+
+
+}
+
+
+}
+
+/* --------------------------------------------------- */
+/* Code Writtin by: Pravesh Agarwal */

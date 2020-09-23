@@ -1,0 +1,94 @@
+<!-- Html files that constructs a course listings for the first year students in the University of the South -->
+<!-- There is a main box that contains three boxs aka columns which are main category, subjects in those categories and the courses in each subject offered -->
+
+
+<!DOCTYPE html>
+  <html lang="en" dir="ltr">
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoursesListings</title>
+    <link rel="stylesheet" href="CoursesListing.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="CoursesListing.js"></script>
+
+  </head>
+
+  <body>
+
+
+    <!-- Main Box of a Discipline = div that contains two columns which are also divs-->
+    <!-- <div id="main"> -->
+      <a id="icon1" class="myIcon">
+        <img id="menuIcon" src="menu icon.png" alt="menu icon" >
+      </a>
+
+      <!-- Subjects for Main Categories; THE FIRST COLUMN------------------------------------------------------ -->
+      <div class="columns" id="firstColumn">
+
+
+        <!-- FOR ANTOHER ROW IN THIS COLUMN; COPY FROM BELOW THIS ... -->
+        <!-- Row 1 -->
+        <div class="firstColumnRow">
+          <a href="javascript:void(0);" class="first" id="1">INSERT TEXT HERE</a>
+          <!-- INSERT PROGRAM LINK BELOW THIS INSIDE THE QUOTATION MARK BESIDE href -->
+          <a href="" target="_blank">
+            <img class="learnMore" src="learnMore.png" alt="Learn More" style="height:15px;">
+          </a>
+        </div>
+        <!-- ... TILL ABOVE THIS, Increment ID (MAX TILL 10), change link inside the href which has target blank -->
+
+      </div>
+
+      <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+      <!-- Programs in the Subjects; THE SECOND COLUMN--------------------------------------------------------- -->
+
+      <!-- PROGRAM NAME; SECOND COLUMN 1 -->
+      <div class="columns secondColumns" id="secondColumn1">
+        <!-- Row 1 -->
+        <div class="secondColumnRow">
+          <a  href="javascript:void(0);" class="second" id="1-1">INSERT TEXT HERE</a>
+          <img class="learnMore" src="learnMore.png" alt="Learn More" style="height:15px;">
+          <!-- Hidden Pop up unless triggered on click -->
+          <div id="myshadow" class="shadow">
+            <div class="popup-content">
+                <span class="close">&times;</span>
+                <!-- INSERT POPUP LINK BELOW THIS INSIDE THE QUOTATION MARK BESIDE src -->
+                <iframe src=""
+                width="100%" height="100%" style="border-radius: 15px;">
+                </iframe>
+            </div>
+          </div>
+        </div>
+
+        <!-- FOR ANTOHER ROW IN THIS COLUMN; COPY FROM BELOW THIS ... -->
+        <!-- Row 2 -->
+        <div class="secondColumnRow">
+          <a style="float:left;" href="javascript:void(0);" class="second" id="1-1">104: Introduction to Three- and Four-Dimensional Media</a>
+          <img class="learnMore" src="learnMore.png" alt="Learn More" style="height:15px;">
+          <!-- Hidden Pop up unless triggered on click -->
+          <div id="myshadow" class="shadow">
+            <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=ART&crse_numb_in=104"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+            </div>
+          </div>
+        </div>
+        <!-- ... TILL ABOVE THIS, Increment ID (NO MAX until common sense), add link inside the empty href -->
+
+      </div>
+
+      <!-- COPY THE WHOLE SECOND COLUMN MODULE WHILE INCREMENTING THE ID FOR ANOTHER COLUMN LINKING TO THE RESPECTIVE ROW IN FIRST COLUMN -->
+
+
+
+
+    </div>
+
+
+  </body>
+</html>

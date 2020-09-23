@@ -1,0 +1,202 @@
+<!-- Html files that constructs a course listings for the first year students in the University of the South -->
+<!-- There is a main box that contains three boxs aka columns which are main category, subjects in those categories and the courses in each subject offered -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoursesListings</title>
+  <link rel="stylesheet" href="CoursesListing.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="CoursesListing.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- Main Box of a Discipline = div that contains two columns which are also divs-->
+  <div id="main">
+    <a id="icon1" class="myIcon">
+      <img id="menuIcon" src="https://new.sewanee.edu/files/resources/menu-icon.png" alt="menu icon" >
+    </a>
+
+    <!-- Subjects for Main Categories; THE FIRST COLUMN------------------------------------------------------ -->
+    <div class="columns" id="firstColumn">
+
+      <!-- Row 1 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="1">French & French Studies (FREN) </a>
+        <a href="https://new.sewanee.edu/programs-of-study/french-and-french-studies/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="2">German & German Studies (GRMN)</a>
+        <a href="https://new.sewanee.edu/programs-of-study/german-and-german-studies/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+      <!-- Row 3 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="3">Latin (LATN) </a>
+        <a href="https://new.sewanee.edu/programs-of-study/classical-studies/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+      <!-- Row 4 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="4">Russian (RUSN) </a>
+        <a href="https://new.sewanee.edu/programs-of-study/russian/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Programs in the Subjects; THE SECOND COLUMN--------------------------------------------------------- -->
+
+    <!-- French & French Studies (FREN) ; SECOND COLUMN 1 -->
+    <div class="columns secondColumns" id="secondColumn1">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="1-1">313	Writing and Speaking French</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=FREN&crse_numb_in=313"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="1-2">314	Introduction to Literature, Culture, and History of the French-Speaking World</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=FREN&crse_numb_in=314"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="1-3">407	Coupling and Creativity in the 19th Century</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=FREN&crse_numb_in=407"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 4 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="1-4">415	The History of French Cinema</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=FREN&crse_numb_in=415"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- German & German Studies (GRMN); SECOND COLUMN 2 -->
+    <div class="columns secondColumns" id="secondColumn2">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="2-1">312	Cultural Inquiry: Pop Culture and Society</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=GRMN&crse_numb_in=312"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Latin (LATN) ; SECOND COLUMN 3 -->
+    <div class="columns secondColumns" id="secondColumn3">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="3-1">407	Vergil</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=LATN&crse_numb_in=407"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 2 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="3-2">300 Caesar</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=LATN&crse_numb_in=300"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <!-- Russian (RUSN) ; SECOND COLUMN 4 -->
+    <div class="columns secondColumns" id="secondColumn4">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="4-1">304	Contemporary Russian in Cultural Context</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=RUSN&crse_numb_in=304"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+</html>

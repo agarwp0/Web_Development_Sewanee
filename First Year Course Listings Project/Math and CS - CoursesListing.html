@@ -1,0 +1,169 @@
+<!-- Html files that constructs a course listings for the first year students in the University of the South -->
+<!-- There is a main box that contains three boxs aka columns which are main category, subjects in those categories and the courses in each subject offered -->
+
+
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CoursesListings</title>
+  <link rel="stylesheet" href="CoursesListing.css">
+  <script src="https://code.jquery.com/jquery-3.5.1.js" integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="CoursesListing.js"></script>
+
+</head>
+
+<body>
+
+
+  <!-- Main Box of a Discipline = div that contains two columns which are also divs-->
+  <div id="main">
+    <a id="icon1" class="myIcon">
+      <img id="menuIcon" src="https://new.sewanee.edu/files/resources/menu-icon.png" alt="menu icon" >
+    </a>
+
+    <!-- Subjects for Main Categories; THE FIRST COLUMN------------------------------------------------------ -->
+    <div class="columns" id="firstColumn">
+
+
+
+      <!-- Row 1 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="1">Computer Science (CSCI)</a>
+        <a href="https://new.sewanee.edu/programs-of-study/computer-science/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="firstColumnRow">
+        <a href="javascript:void(0);" class="first" id="2">Mathematics (MATH)</a>
+        <a href="https://new.sewanee.edu/programs-of-study/mathematics/" target="_blank">
+          <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        </a>
+      </div>
+
+
+    </div>
+
+    <!-- ---------------------------------------------------------------------------------------------------- -->
+
+
+    <!-- Programs in the Subjects; THE SECOND COLUMN--------------------------------------------------------- -->
+
+    <!-- Computer Science (CSCI); SECOND COLUMN 1 -->
+    <div class="columns secondColumns" id="secondColumn1">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="1-1">157	Introduction to Modeling and Programming</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=CSCI&crse_numb_in=157"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Mathematics (MATH); SECOND COLUMN 2 -->
+    <div class="columns secondColumns" id="secondColumn2">
+      <!-- Row 1 -->
+      <div class="secondColumnRow">
+        <a  href="javascript:void(0);" class="second" id="2-1">100	Topics in Mathematics</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+              <span class="close">&times;</span>
+              <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=100"
+              width="100%" height="100%" style="border-radius: 15px;">
+              </iframe>
+          </div>
+        </div>
+      </div>
+
+      <!-- Row 2 -->
+      <div class="secondColumnRow">
+        <a style="float:left;" href="javascript:void(0);" class="second" id="2-2">101	Calculus I</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=101"
+            width="100%" height="100%" style="border-radius: 15px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 3 -->
+      <div class="secondColumnRow">
+        <a style="float:left;" href="javascript:void(0);" class="second" id="2-3">102	Calculus II</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=102"
+            width="100%" height="100%" style="border-radius: 15px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 4 -->
+      <div class="secondColumnRow">
+        <a style="float:left;" href="javascript:void(0);" class="second" id="2-4">207	Multidimensional Calculus</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=207"
+            width="100%" height="100%" style="border-radius: 15px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 5 -->
+      <div class="secondColumnRow">
+        <a style="float:left;" href="javascript:void(0);" class="second" id="2-5">210	Linear Algebra</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=210"
+            width="100%" height="100%" style="border-radius: 15px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+      <!-- Row 6 -->
+      <div class="secondColumnRow">
+        <a style="float:left;" href="javascript:void(0);" class="second" id="2-6">215	Discrete Mathematical Structures</a>
+        <img class="learnMore" src="https://new.sewanee.edu/files/resources/learnmore.png" alt="Learn More" style="height:15px;">
+        <!-- Hidden Pop up unless triggered on click -->
+        <div id="myshadow" class="shadow">
+          <div class="popup-content">
+            <span class="close">&times;</span>
+            <iframe src="https://ssb.sewanee.edu/cis_uoss/bwckctlg.p_disp_course_detail?cat_term_in=202110&subj_code_in=MATH&crse_numb_in=215"
+            width="100%" height="100%" style="border-radius: 15px;">
+            </iframe>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+
+  </div>
+
+
+</body>
+</html>
